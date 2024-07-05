@@ -12,7 +12,7 @@ export const navLinks = [
   },
   {
     id: "dashboard",
-    title: "Dashboard",
+    title: "Support",
   },
   {
     id: "community",

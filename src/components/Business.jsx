@@ -1,6 +1,6 @@
 import { quizzes } from "../constants";
 import styles, { layout } from "../style";
-import Button from "./Button";
+import CustomButton from "./CustomButton";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== quizzes.length - 1 ? "mb-6" : "mb-0"} quiz-card`}>
@@ -28,7 +28,7 @@ const Business = () =>  (
       With our comprehensive range of quizzes, you can dive into your studies, reinforce what you know, and discover what you need to focus on. Put your knowledge to the test, get instant feedback, and keep your learning on track. Our quizzes are more than just questions; they're stepping stones to academic achievement.
       </p>
 
-      <Button styles={`mt-10`} />
+      <CustomButton styles={`mt-10`} />
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

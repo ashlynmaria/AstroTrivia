@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .section {
+    padding: 2rem;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .fadeIn {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rocketMove {
+    0% {
+      transform: translate(-3000%, 5%);
+    }
+    100% {
+      transform: translate(3500%, 5%);
+    }
+  }
+  
+  .rocket {
+    position: fixed;
+    top: 7%; 
+    left: 20%; 
+    width: 60px; 
+    height: 60px; 
+    background: url('./assets/rocket.png') no-repeat center center;
+    background-size: contain;
+    animation: rocketMove 3s ease-in-out;
+    display: none;
+    z-index: 9999;
+  }
+  
+  .rocket-active {
+    display: block;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -180px; 
+    height: 100%;
+    width: 185px; 
+    background: linear-gradient(180deg, #292340, #292340);
+    opacity: 0.97; 
+    overflow-y: auto; 
+    transition: left 0.3s ease; 
+    z-index: 1000; 
+  }
+  
+  .navbar.open {
+    left: 0; 
+  }
+  
+  .brand {
+    position: absolute;
+    top: 30px;
+    size: 25px;
+    left: 40px; 
+    z-index: 1001; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  .toggle-btn {
+    position: fixed;
+    top: 20px; 
+    left: 10px; 
+    width: 50px; 
+    height: 50px; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1001; 
+  }
+  
+  .toggle-btn img {
+    width: 24px; 
+    height: 24px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-btn:hover img {
+    transform: rotate(90deg); 
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 80px; 
+    left: 0;
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 0; 
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
